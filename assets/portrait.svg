@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Abstract drawing of a tower at night with one lit window">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#060a13"/>
+      <stop offset="0.65" stop-color="#08152a"/>
+      <stop offset="1" stop-color="#0d2a44"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="1" r="0.7">
+      <stop offset="0" stop-color="#3fe0ff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#3fe0ff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#14213a" stroke-width="1"/>
+    </pattern>
+    <pattern id="wins" width="46" height="52" patternUnits="userSpaceOnUse">
+      <rect x="12" y="14" width="22" height="26" fill="#152136"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="1000" fill="url(#sky)"/>
+  <rect width="800" height="1000" fill="url(#grid)"/>
+  <rect width="800" height="1000" fill="url(#glow)"/>
+  <!-- distant blocks -->
+  <rect x="40" y="620" width="150" height="380" fill="#0a1424"/>
+  <rect x="610" y="540" width="170" height="460" fill="#0a1424"/>
+  <!-- the tower -->
+  <rect x="262" y="150" width="276" height="850" fill="#0d1728" stroke="#22304a" stroke-width="2"/>
+  <rect x="262" y="176" width="276" height="832" fill="url(#wins)"/>
+  <rect x="332" y="118" width="136" height="32" fill="#0d1728" stroke="#22304a" stroke-width="2"/>
+  <line x1="400" y1="118" x2="400" y2="50" stroke="#22304a" stroke-width="3"/>
+  <circle cx="400" cy="46" r="6" fill="#ff6b6b"/>
+  <!-- the lit windows -->
+  <rect x="412" y="450" width="22" height="26" fill="#3fe0ff"/>
+  <rect x="402" y="440" width="42" height="46" fill="#3fe0ff" opacity="0.18"/>
+  <rect x="320" y="710" width="22" height="26" fill="#ffc47a"/>
+  <rect x="458" y="242" width="22" height="26" fill="#3fe0ff" opacity="0.75"/>
+  <!-- drafting marks -->
+  <g stroke="#3fe0ff" stroke-width="1.5" opacity="0.55" fill="none">
+    <line x1="220" y1="150" x2="220" y2="1000"/>
+    <line x1="210" y1="150" x2="230" y2="150"/>
+    <line x1="262" y1="92" x2="538" y2="92" stroke-dasharray="6 6"/>
+    <line x1="262" y1="82" x2="262" y2="102"/>
+    <line x1="538" y1="82" x2="538" y2="102"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Abstract floor plan drawn in cyan lines">
+  <rect width="800" height="600" fill="#081120"/>
+  <g fill="none" stroke="#3fe0ff" stroke-width="4">
+    <rect x="120" y="100" width="560" height="400"/>
+    <path d="M120 300h220M340 100v200M340 300v90M340 440v60M470 100v150M470 300v200M470 300h210"/>
+  </g>
+  <g fill="none" stroke="#3fe0ff" stroke-width="1.5" opacity="0.6">
+    <path d="M340 390a50 50 0 0 1 50 50"/>
+    <path d="M470 250a50 50 0 0 0 50 50"/>
+    <line x1="120" y1="540" x2="680" y2="540"/>
+    <line x1="120" y1="530" x2="120" y2="550"/>
+    <line x1="680" y1="530" x2="680" y2="550"/>
+  </g>
+  <circle cx="230" cy="200" r="46" fill="none" stroke="#ffc47a" stroke-width="3"/>
+  <rect x="540" y="370" width="80" height="80" fill="#3fe0ff" opacity="0.14"/>
+</svg>
