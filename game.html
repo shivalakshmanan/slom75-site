@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lights On, a puzzle game | Shiva Lakshmanan</title>
+<meta name="description" content="Lights On is a calm wiring puzzle. Turn the tiles until every room in the tower is lit. Twelve towers, no clock, no way to lose.">
+<meta name="author" content="Shiva Lakshmanan">
+<meta name="theme-color" content="#060a13">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://slom75.online/game.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Shiva Lakshmanan">
+<meta property="og:title" content="Lights On, a puzzle game | Shiva Lakshmanan">
+<meta property="og:description" content="Lights On is a calm wiring puzzle. Turn the tiles until every room in the tower is lit. Twelve towers, no clock, no way to lose.">
+<meta property="og:url" content="https://slom75.online/game.html">
+<meta property="og:image" content="https://slom75.online/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Shiva Lakshmanan: architect, thinker and dabbler in tech, beside a night skyline">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/big-shoulders-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/newsreader-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.className += ' js';</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">Shiva Lakshmanan</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="bars" aria-hidden="true"></span>Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul class="nav-list">
+          <li><a href="about.html">About</a></li>
+          <li><a href="writing.html">Writing</a></li>
+          <li><a href="lab.html">Lab</a></li>
+          <li><a href="game.html" aria-current="page">Game</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-head compact">
+  <div class="wrap">
+    <h1>Game</h1>
+    <p class="display">Lights On</p>
+    <p class="lede">Twelve towers have lost their power. Turn the wiring until every room connects back to the mains. There’s no clock and no way to lose.</p>
+  </div>
+</section>
+
+<section class="band tight">
+  <div class="wrap">
+    <noscript><p>Lights On needs JavaScript to run. Switch it on in your browser and reload this page.</p></noscript>
+
+    <div class="game-layout">
+      <div class="game-main">
+        <h2 id="level-title">Tower 1 of 12</h2>
+        <p class="game-status" id="status" role="status"></p>
+        <div class="tower-stage">
+          <div class="tower" id="tower">
+            <div class="roof"></div>
+            <div class="grid" id="grid" role="group" aria-label="Tower"></div>
+            <div class="plinth" aria-hidden="true">mains</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-side">
+        <div class="win" id="win" hidden>
+          <p id="win-msg"></p>
+          <button class="btn" type="button" id="next">Go to the next tower</button>
+        </div>
+        <div class="game-actions">
+          <button class="btn quiet" type="button" id="hint">Show a hint</button>
+          <button class="btn quiet" type="button" id="restart">Scramble this tower again</button>
+        </div>
+        <details class="howto" open>
+          <summary>How to play</summary>
+          <ul>
+            <li>Tap or click a tile to turn it a quarter-turn clockwise. Shift-click or right-click turns it the other way.</li>
+            <li>Power starts at the mains, the ringed tile on the ground floor. A room lights up once its wire connects back to it.</li>
+            <li>Light every room to finish the tower. Each tower is a little bigger than the last.</li>
+            <li>On a keyboard, move with the arrow keys and press Enter or Space to turn a tile.</li>
+            <li>Stuck? “Show a hint” turns one tile the right way and pins it there.</li>
+          </ul>
+        </details>
+      </div>
+    </div>
+
+    <div class="street-wrap">
+      <div class="street-head">
+        <h2>Your street</h2>
+        <button class="link-btn" type="button" id="reset-all" hidden>Switch every tower off</button>
+      </div>
+      <div class="street" id="street"></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="skyline" data-skyline="footer"></div>
+  <div class="footer-bar">
+    <div class="wrap footer-inner">
+      <p>© <span id="year">2026</span> Shiva Lakshmanan</p>
+      <p><a href="https://medium.com/@shiva.lakshmanan" rel="noopener me">Medium</a> &nbsp;&nbsp; <a href="https://linkedin.com/in/shivalakshmanan" rel="noopener me">LinkedIn</a> &nbsp;&nbsp; <a href="contact.html">Contact</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+<script src="js/game.js" defer></script>
+</body>
+</html>

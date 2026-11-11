@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lab | Shiva Lakshmanan</title>
+<meta name="description" content="A workbench for experiments in architecture and design, technology and coding, and art, photography and travel.">
+<meta name="author" content="Shiva Lakshmanan">
+<meta name="theme-color" content="#060a13">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://slom75.online/lab.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Shiva Lakshmanan">
+<meta property="og:title" content="Lab | Shiva Lakshmanan">
+<meta property="og:description" content="A workbench for experiments in architecture and design, technology and coding, and art, photography and travel.">
+<meta property="og:url" content="https://slom75.online/lab.html">
+<meta property="og:image" content="https://slom75.online/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Shiva Lakshmanan: architect, thinker and dabbler in tech, beside a night skyline">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/big-shoulders-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/newsreader-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.className += ' js';</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">Shiva Lakshmanan</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="bars" aria-hidden="true"></span>Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul class="nav-list">
+          <li><a href="about.html">About</a></li>
+          <li><a href="writing.html">Writing</a></li>
+          <li><a href="lab.html" aria-current="page">Lab</a></li>
+          <li><a href="game.html">Game</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-head">
+  <div class="wrap">
+    <h1>Lab</h1>
+    <p class="display">A workbench, not a gallery.</p>
+    <p class="lede">This is where the dabbling happens. There are three benches: design, code, and the pictures and places that feed both. Some of it works. Some of it is still a sketch.</p>
+  </div>
+</section>
+
+<section class="band" id="design">
+  <div class="wrap">
+    <div class="strand-head reveal">
+      <h2>Architecture and design</h2>
+      <p>I still think in elevations. Here’s one you can redraw yourself.</p>
+    </div>
+
+    <div class="sketcher reveal">
+      <div>
+        <h3>Sketch a tower</h3>
+        <div class="field">
+          <div class="field-head"><label for="sk-floors">Floors</label><output id="sk-floors-out" for="sk-floors">22</output></div>
+          <input type="range" id="sk-floors" min="6" max="40" value="22">
+        </div>
+        <div class="field">
+          <div class="field-head"><label for="sk-bays">Bays</label><output id="sk-bays-out" for="sk-bays">6</output></div>
+          <input type="range" id="sk-bays" min="3" max="12" value="6">
+        </div>
+        <div class="field">
+          <div class="field-head"><label for="sk-lit">Lights on</label><output id="sk-lit-out" for="sk-lit">35%</output></div>
+          <input type="range" id="sk-lit" min="0" max="100" step="5" value="35">
+        </div>
+        <button class="btn quiet" type="button" id="sk-shuffle">Shuffle the crown and lights</button>
+        <p class="sketch-caption" id="sk-caption" role="status"></p>
+      </div>
+      <div class="sketch-stage" id="sk-stage">
+        <noscript><p class="muted sketch-note">The sketcher needs JavaScript switched on.</p></noscript>
+      </div>
+    </div>
+
+    <!-- SAMPLE ENTRIES: replace the text below with your own, and delete the <span class="tag">Sample</span> lines. -->
+    <div class="entries">
+      <article class="entry reveal">
+        <span class="tag">Sample</span>
+        <h3>A detail worth stealing</h3>
+        <p>A place for one drawing, one junction or one building that taught me something, with a few lines on why.</p>
+      </article>
+      <article class="entry reveal">
+        <span class="tag">Sample</span>
+        <h3>Notes from site</h3>
+        <p>A place for what a drawing never tells you until the concrete is poured.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band tint" id="code">
+  <div class="wrap">
+    <div class="strand-head reveal">
+      <h2>Technology and coding</h2>
+      <p>I’m a dabbler, not a developer, which is exactly why this is fun.</p>
+    </div>
+    <div class="entries">
+      <article class="entry reveal">
+        <h3>This site</h3>
+        <p>Six pages of plain HTML, CSS and JavaScript. No framework, no tracking and nothing to install. The skylines are drawn fresh in your browser each time.</p>
+      </article>
+      <article class="entry reveal">
+        <h3>Lights On</h3>
+        <p>A wiring puzzle with twelve towers. Each one is grown from a single branching network, so it can always be solved.</p>
+        <p><a href="game.html">Play Lights On</a></p>
+      </article>
+      <article class="entry reveal">
+        <span class="tag">Sample</span>
+        <h3>The next experiment</h3>
+        <p>A place for the next small tool, dashboard or half-working idea.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="places">
+  <div class="wrap">
+    <div class="strand-head reveal">
+      <h2>Art, photography and travel</h2>
+      <p>Work has moved me around. These are the cities I’ve called the office.</p>
+    </div>
+    <ul class="cities reveal">
+      <li>Gurgaon</li>
+      <li>Chennai</li>
+      <li>Coimbatore</li>
+      <li>Lagos</li>
+      <li>Kinshasa</li>
+    </ul>
+
+    <!-- SAMPLE FRAMES: replace assets/photo-1.svg (and 2, 3) with your own photos, update the alt text and captions, and delete the Sample tags. -->
+    <div class="frames">
+      <figure class="frame reveal">
+        <img src="assets/photo-1.svg" width="800" height="600" alt="Abstract drawing of a building facade at night with a few lit windows" loading="lazy">
+        <figcaption><span class="tag">Sample</span>A photograph goes here, with a line about where and why.</figcaption>
+      </figure>
+      <figure class="frame reveal">
+        <img src="assets/photo-2.svg" width="800" height="600" alt="Abstract drawing of a low sun over a river and a city silhouette" loading="lazy">
+        <figcaption><span class="tag">Sample</span>A place that stayed with me goes here.</figcaption>
+      </figure>
+      <figure class="frame reveal">
+        <img src="assets/photo-3.svg" width="800" height="600" alt="Abstract floor plan drawn in thin cyan lines" loading="lazy">
+        <figcaption><span class="tag">Sample</span>A sketch or a piece of art goes here.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="skyline" data-skyline="footer"></div>
+  <div class="footer-bar">
+    <div class="wrap footer-inner">
+      <p>© <span id="year">2026</span> Shiva Lakshmanan</p>
+      <p><a href="https://medium.com/@shiva.lakshmanan" rel="noopener me">Medium</a> &nbsp;&nbsp; <a href="https://linkedin.com/in/shivalakshmanan" rel="noopener me">LinkedIn</a> &nbsp;&nbsp; <a href="contact.html">Contact</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+<script src="js/lab.js" defer></script>
+</body>
+</html>
